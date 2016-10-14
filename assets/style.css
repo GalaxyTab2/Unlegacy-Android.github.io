@@ -3,37 +3,38 @@ html {
   min-height: 100%;
 }
 body {
-  margin-bottom: 60px;
+  margin-bottom: 75px;
   background-color: white;
 }
 .heading {
   padding-top: 45px;
 }
 .jumbotron p {
-  font-size: 14px;
+  font-size: 16px;
 }
 .footer {
   position: absolute;
   bottom: 0;
   width: 100%;
-  height: 60px;
+  height: 75px;
   background-color: #f5f5f5;
 }
 .container .text-muted {
-  margin: 6px 0;
+  margin: 14px 0;
 }
 .navbar-transparent {
+  background: rgba(0, 0, 0, 0.0) !important;
   color: black !important;
 }
 .navbar {
-  -webkit-transition: all 0.5s ease-out;
-  -moz-transition: all 0.5s ease-out;
-  -o-transition: all 0.5s ease-out;
-  -ms-transition: all 0.5s ease-out;
-  transition: all 0.5s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
 }
 .navbar.scrolled {
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.4) !important;
   color: rgba(255,255,255, 0.9) !important;
   padding-top: 10px !important;
 }
@@ -42,16 +43,18 @@ body {
 }
 @media (max-width: 768px) {
   .heading {
-    padding-top: 65px;
+    padding-top: 55px;
+    font-size: 44px;
   }
-  .navbar-transparent {
-    background-color: rgba(0, 0, 0, 0);
-    color: white !important;
+  .footer {
+    height: 120px;
+  }
+  body {
+    margin-bottom: 120px;
   }
   .navbar.scrolled {
-    background-color: rgba(0, 0, 0, 0.4);
-    padding-top: 10px;
-    border-radius: 0;
+    background: rgba(0, 0, 0, 0.4) !important;
+    color: rgba(255,255,255, 0.9) !important;
   }
 }
 .team-card {
@@ -65,7 +68,6 @@ body {
         padding-left: 1em;
         padding-right: 1em;
 }
-
 .team-container {
         height: auto;
         width: 6.5em;
